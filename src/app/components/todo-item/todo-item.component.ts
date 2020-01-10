@@ -7,10 +7,19 @@ import { Todo } from '../../modules/Todo';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit {
-@Input() todo: Todo;
-  constructor() { }
+  @Input() todo: Todo;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  setClasses() {
+    const classes = {
+      todo: true,
+      'is-complete': this.todo.completed
+    };
+    return classes;
+  }
 }
