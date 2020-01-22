@@ -26,6 +26,7 @@ import { AboutComponent } from './components/pages/about/about.component';*/
     HttpClientModule,
     FormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
